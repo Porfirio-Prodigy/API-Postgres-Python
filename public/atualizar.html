@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>ArchDB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container text-center mt-3">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <h3>Editar Notas</h3>
+              <form action="/update" method="post">
+                <div class="form-group">
+                  <label for="text">ID: </label>
+                  <input type="text" class="form-control" value="{{params[0]}}" name="id">
+                </div>
+                <div class="form-group">
+                  <label for="text">Nome: </label>
+                  <input type="text" class="form-control" value="{{params[1]}}" name="nome">
+                </div>
+
+                <div class="form-group">
+                  <label for="text">Nota-1:</label>
+                  <input type="text" class="form-control" value="{{params[2]}}" name="nota1">
+                </div>
+
+                <div class="form-group">
+                  <label for="text">Nota-2:</label>
+                  <input type="text" class="form-control" value="{{params[3]}}" name="nota2">
+                </div>
+
+                <div class="form-group">
+                  <label for="text">Nota-3:</label>
+                  <input type="text" class="form-control" value="{{params[4]}}" name="nota3">
+                </div>
+
+                <div class="form-group">
+                  <label for="text">Nota-4:</label>
+                  <input type="text" class="form-control" value="{{params[5]}}" name="nota4">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+              
+              <form action="/" method="get">
+                <button type="submit" class="btn btn-success mt-3">Voltar</button>
+              </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+</body>
+</html>
