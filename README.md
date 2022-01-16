@@ -19,7 +19,7 @@
 </p>
 <br>
 <p>
-    Necessitasse criar um banco de dados e fazer a conexão com ele na linha 4 do arquivo coon.py, o banco de dados deve ser criado com o nome notas.
+    Necessitasse criar um banco de dados e fazer a conexão com ele na linha 4 do arquivo conn.py, o banco de dados deve ser criado com o nome notas.
 <br>
 <br>
 <h4>Tabelas do Banco de Dados<h4>
